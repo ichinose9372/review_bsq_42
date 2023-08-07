@@ -1,0 +1,6 @@
+objs/
+bsq
+*example*
+test*
+./*/*.o
+

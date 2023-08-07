@@ -6,7 +6,7 @@
 #    By: ichinoseyuuki <ichinoseyuuki@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 13:12:23 by louisnop          #+#    #+#              #
-#    Updated: 2023/08/07 13:47:35 by ichinoseyuu      ###   ########.fr        #
+#    Updated: 2023/08/07 13:57:56 by ichinoseyuu      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,10 +30,11 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
 
 .PHONY: all clean re
 clean:
-	-rm -f $(OBJS)
+	-rm -rf $(OBJS)
 
 fclean:
-	-rm -f $(TARGET) $(OBJS)
+	
+	-rm -rf $(TARGET) $(OBJS_DIR)
 
 re: fclean all
 
